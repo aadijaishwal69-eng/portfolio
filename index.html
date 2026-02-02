@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Jaiswal | Portfolio</title>
+
+    <!-- Font Awesome (icons only, no skill claim) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         :root {
             --primary-color: #00d2ff;
@@ -29,7 +32,6 @@
             overflow-x: hidden;
         }
 
-        /* Smooth Scroll */
         html { scroll-behavior: smooth; }
 
         /* Navigation */
@@ -53,7 +55,7 @@
 
         nav a:hover { color: var(--primary-color); }
 
-        /* Hero Section */
+        /* Hero */
         .hero {
             height: 100vh;
             display: flex;
@@ -72,7 +74,10 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .hero p { font-size: 1.2rem; color: var(--text-dim); }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+        }
 
         /* Sections */
         .container {
@@ -88,7 +93,6 @@
             padding-left: 15px;
         }
 
-        /* Cards/Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -108,8 +112,12 @@
             border-color: var(--primary-color);
         }
 
-        /* Skills Tags */
-        .skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
         .skill-tag {
             background: rgba(0, 210, 255, 0.1);
             color: var(--primary-color);
@@ -118,7 +126,6 @@
             font-size: 0.9rem;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 3rem;
@@ -133,7 +140,9 @@
             transition: 0.3s;
         }
 
-        .social-links a:hover { color: var(--primary-color); }
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
@@ -149,55 +158,71 @@
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- HERO -->
     <section class="hero" id="home">
         <h1>Aditya Jaiswal</h1>
-        <p>B.Tech CSE Student @ KIIT University | Aspiring Developer</p>
+        <p>CS Undergraduate @ KIIT University | Backend & Systems Focus</p>
     </section>
 
+    <!-- ABOUT -->
     <div class="container" id="about">
         <h2>About Me</h2>
         <div class="card">
-            <p>I am a passionate 2nd-year Computer Science student from <b>Nepal</b>, currently studying at KIIT University. I love building digital solutions and exploring new technologies. My focus is on creating efficient, scalable, and user-friendly applications.</p>
+            <p>
+                I am a 2nd-year Computer Science undergraduate at KIIT University,
+                focused on the <b>engine room of software systems</b>.
+                My interests lie in backend development, database systems,
+                and understanding operating system internals.
+                I prioritize logic, data, and system efficiency over frontend design.
+            </p>
             <br>
             <div class="skills-list">
-                <span class="skill-tag">C++</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">HTML/CSS</span>
-                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">C (DSA)</span>
+                <span class="skill-tag">Java (OOP)</span>
+                <span class="skill-tag">DBMS & SQL</span>
+                <span class="skill-tag">Operating Systems</span>
                 <span class="skill-tag">Data Structures</span>
             </div>
         </div>
     </div>
 
+    <!-- PROJECTS -->
     <div class="container" id="projects">
         <h2>Projects</h2>
         <div class="grid">
             <div class="card">
-                <h3>Project One</h3>
-                <p>A brief description of a cool project you built during your semester. Mention the tech stack used.</p>
-            </div>
-            <div class="card">
-                <h3>Project Two</h3>
-                <p>Maybe a KIIT-related hackathon project or a personal tool you developed for fun.</p>
+                <h3>Academic & Lab Projects</h3>
+                <p>
+                    Hands-on work in DBMS and Java including SQL queries,
+                    schema design, CRUD operations, and lab-based exercises.
+                    JDBC-integrated backend projects are currently in progress.
+                </p>
             </div>
         </div>
     </div>
 
+    <!-- CONTACT -->
     <div class="container" id="contact">
-        <h2>Contact Me</h2>
+        <h2>Contact</h2>
         <div class="card" style="text-align: center;">
-            <p>Let's connect and build something amazing together!</p>
+            <p>Let’s connect and discuss systems, backend, and learning.</p>
             <br>
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:aditya@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/aadijaishwal69-eng" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" title="LinkedIn to be added">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:aditya.jaishwal.in@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Aditya Jaiswal. Built with ❤️ and Code.</p>
+        <p>&copy; 2026 Aditya Jaiswal. Backend & Systems Focus.</p>
     </footer>
 
 </body>
